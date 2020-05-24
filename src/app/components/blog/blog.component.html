@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-12 blog">
+                <h1>{{blog?.name}}</h1>
+            
+            <div class="col-12">
+                <img [src]="blog?.thumb" >
+            </div>
+            <div class="col-12 border-bottom">
+                
+                <p>{{blog?.body}}</p>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-outline-dark mt-3" [routerLink]="['/main']" >VOLVER</button>
+        </div>
+        
+    </div>
+</div>

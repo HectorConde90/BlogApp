@@ -1,0 +1,10 @@
+<div class="row">
+   <div class="col-12  mt-2 titulo">
+       <h2 class="cabecera">FEATURED BLOGS</h2>
+   </div>
+   <div class="col-12 blog-main" [attr.data-id]="blog.id" [routerLink]="['/main', 'blog', blog.id]" *ngFor="let blog of arrFeatured">
+       <h2 class="border-bottom">{{blog?.name | nameBlogs}}...</h2>
+       <p>{{blog?.body | bodyBlogs}}...</p>
+       <h6><strong>Author: </strong>{{blog?.author.name}}</h6>
+   </div>
+</div>
